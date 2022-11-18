@@ -5,8 +5,10 @@
   box-sizing: border-box;
   font-family: "Roboto";
 }
-.container{
-    /* padding: 20px 70px; */
+
+.title{
+  text-align: center;
+  margin-top: 70px;
 }
 a {
   text-decoration: none;
@@ -50,7 +52,7 @@ a {
   border-radius: 7px;
   /* margin-top: 100px ; */
 }
-button {
+.btn {
   font-size: 14px;
   background-color: #833ae0;
   color: white;
