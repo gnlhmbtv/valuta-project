@@ -42,27 +42,27 @@
 
                             <p class="left-p">У меня есть</p>
                             <div class="buttons-left ">
-                                <button id="testDiv" class="button button1 col-lg-3">RUB</button>
-                                <button  onclick="myFunction('two')" class="button button2 col-lg-3">USD</button>
-                                <button onclick="myFunction('three')" class="button button3 col-lg-3">EUR</button>
-                                <button onclick="myFunction('four')" class="button button4 col-lg-3">GBP</button>
+                                <button onclick="changeColorleft('one'), convertLeft()" class="button button1-left col-lg-3">RUB</button>
+                                <button onclick="changeColorleft('two'), convertLeft()" class="button button2-left col-lg-3">USD</button>
+                                <button onclick="changeColorleft('three'), convertLeft()" class="button button3-left col-lg-3">EUR</button>
+                                <button onclick="changeColorleft('four'), convertLeft()" class="button button4-left col-lg-3">GBP</button>
                             </div>
                             <div class="input1">
-                                <input id="left-input" type="number" class="left-input" placeholder="1 RUB = 0.0135 USD">
+                                <input onkeyup="convertLeft()" id="left-input" type="number" class="left-input" placeholder="1 RUB = 0.0135 USD">
                             </div>
 
                         </div>
-                        <div class="left-content ">
+                        <div class="right-content ">
 
-                            <p class="left-p">Хочу приобрести</p>
-                            <!-- <div class="buttons-left ">
-                                <button class="button button1 col-lg-3">RUB</button>
-                                <button class="button button2 col-lg-3">USD</button>
-                                <button class="button button3 col-lg-3">EUR</button>
-                                <button class="button button4 col-lg-3">GBP</button>
-                            </div> -->
+                            <p class="right-p">Хочу приобрести</p>
+                            <div class="buttons-right ">
+                                <button onclick="changeColorright('one'), convertRight()"  class="button button1-right col-lg-3">RUB</button>
+                                <button onclick="changeColorright('two'), convertRight()"  class="button button2-right col-lg-3">USD</button>
+                                <button onclick="changeColorright('three'), convertRight()"  class="button button3-right col-lg-3">EUR</button>
+                                <button onclick="changeColorright('four'), convertRight()"  class="button button4-right col-lg-3">GBP</button>
+                            </div>
                             <div class="input1">
-                                <input type="number" class="left-input" placeholder="1 USD = 73.8896 RUB">
+                                <input onkeyup="convertRight()" id="right-input" type="number" class="right-input" placeholder="1 USD = 73.8896 RUB">
                             </div>
 
                         </div>

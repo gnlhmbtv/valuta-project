@@ -47,7 +47,15 @@ a {
 .left-content{
     margin-top: 160px;
 }
+.right-content{
+    margin-top: 160px;
+}
 .buttons-left {
+  font-size: 0;
+  border-radius: 7px;
+  /* margin-top: 100px ; */
+}
+.buttons-right {
   font-size: 0;
   border-radius: 7px;
   /* margin-top: 100px ; */
@@ -65,14 +73,14 @@ a {
 .valuta {
     position: absolute;
 }
- .button2, .button3, .button4 {
+ .button2-left, .button2-right, .button3-left, .button3-right, .button4-left, .button4-right {
     background-color: white;
     color: black;
 }
-.button4{
+.button4-left, .button4-right{
     border-radius: 0px 5px 5px 0px;
 }
-.button1{
+.button1-left, .button1-right{
     border-radius: 5px 0 0 5px;
 }
 .left-p {
@@ -84,7 +92,17 @@ a {
   line-height: 14px;
   display: flex;
   align-items: center;
-
+  color: #9f9f9f;
+}
+.right-p {
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
   color: #9f9f9f;
 }
 
