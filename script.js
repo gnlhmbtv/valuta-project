@@ -5,48 +5,6 @@ let rightInput = document.querySelector("#right-input");
 let base;
 let convertTo;
 
-function myFunction(str) {
-  leftMoneybuttons.forEach;
-  if (str == "two") {
-    base = "USD";
-    b2.style.backgroundColor = "#833ae0";
-    b1.style.backgroundColor = "white";
-    b3.style.backgroundColor = "white";
-    b4.style.backgroundColor = "white";
-    b2.style.color = "white";
-    b1.style.color = "black";
-    b3.style.color = "black";
-    b4.style.color = "black";
-    let leftvalue = leftInput.value;
-    console.log(leftvalue);
-    fetch(`https://api.exchangerate.host/latest?base=${base}&symbols=RUB`)
-      .then((res) => res.json())
-      .then((data) => {
-        rightInput?.setAttribute(
-          "value",
-          Object.values(data.rates)[0] * leftvalue
-        );
-      });
-  } else if (str == "three") {
-    b3.style.backgroundColor = "#833ae0";
-    b1.style.backgroundColor = "white";
-    b2.style.backgroundColor = "white";
-    b4.style.backgroundColor = "white";
-    b1.style.color = "black";
-    b3.style.color = "white";
-    b2.style.color = "black";
-    b4.style.color = "black";
-  } else if (str == "four") {
-    b4.style.backgroundColor = "#833ae0";
-    b1.style.backgroundColor = "white";
-    b2.style.backgroundColor = "white";
-    b3.style.backgroundColor = "white";
-    b1.style.color = "black";
-    b4.style.color = "white";
-    b2.style.color = "black";
-    b3.style.color = "black";
-  }
-}
 
 function convertLeft() {
   let str;
@@ -203,44 +161,3 @@ function changeColorright(str) {
     b3.style.color = "black";
   }
 }
-
-// var element = document.getElementById("testDiv");
-// var style = window.getComputedStyle(element, "");
-// var bgColor = style.getPropertyValue("background-color");
-// console.log(element, bgColor);
-
-leftMoneybuttons.forEach((b) => {
-  //  if(b.innerHTML == 'RUB'){
-  //    var style = window.getComputedStyle(b, "").getPropertyValue("background-color")
-  //   console.log(b, style)
-  //  }
-  // b.addEventListener("click", (e) => {
-  //   console.log(e.target.className);
-  //   switch (e.target.className) {
-  //     case "button button2 col-lg-3":
-  //       e.target.style.backgroundColor == "red";
-  //       console.log(e.target);
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // });
-  // var style = window
-  //   .getComputedStyle(b, "")
-  //   .getPropertyValue("background-color");
-  // console.log(b, style);
-});
-
-// leftMoneybuttons.forEach((item) =>
-//   item.addEventListener("click", function (e) {
-//     console.log(e.target.className);
-//     switch (e.target.className) {
-//       case "button button2 col-lg-3":
-//         e.target.style.backgroundColor == "red";
-//         console.log(e.target);
-//         break;
-//       default:
-//         break;
-//     }
-//   })
-// );
