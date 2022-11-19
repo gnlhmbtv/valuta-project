@@ -31,7 +31,7 @@ a {
   color: black;
 }
 
-#login-btn {
+#login-button {
   border-radius: 4px;
   padding: 8px;
   border: none;
@@ -52,7 +52,7 @@ a {
   border-radius: 7px;
   /* margin-top: 100px ; */
 }
-.btn {
+.button {
   font-size: 14px;
   background-color: #833ae0;
   color: white;
@@ -65,14 +65,14 @@ a {
 .valuta {
     position: absolute;
 }
- .btn2, .btn3, .btn4 {
+ .button2, .button3, .button4 {
     background-color: white;
     color: black;
 }
-.btn4{
+.button4{
     border-radius: 0px 5px 5px 0px;
 }
-.btn1{
+.button1{
     border-radius: 5px 0 0 5px;
 }
 .left-p {
